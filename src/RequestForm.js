@@ -11,5 +11,9 @@ export const RequestForm = () => (
       <label htmlFor="lastName">Last Name</label>
       <input id="lastName" data-testid="lastName" />
     </div>
+    <div className="formGroup">
+      <label htmlFor="email">Email</label>
+      <input type="email" id="email" data-testid="email" />
+    </div>
   </form>
 )

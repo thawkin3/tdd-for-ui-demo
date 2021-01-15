@@ -37,3 +37,4 @@ The basic requirements are:
 7. Render a last name input and label (passes)
 8. Refactor your code to render the form inputs in a column (note that the tests continue to pass during our refactor!)
 9. Write a test that looks for the email address input (fails)
+10. Render an email input and label (passes)
