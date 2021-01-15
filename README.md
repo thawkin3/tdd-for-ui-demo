@@ -26,6 +26,17 @@ The basic requirements are:
 3. If any of the form inputs are left blank or filled out incorrectly, an error message should display
 4. When the form is successfully submitted, the form should disappear and be replaced with a confirmation message
 
+## Design Mocks
+
+Initial UI: 
+![RequestForm - Initial UI](docs/RequestForm_InitialUI.png)
+
+Error messages appear on form submission if fields are left blank:
+![RequestForm - Error Messages](docs/RequestForm_ErrorMessages.png)
+
+Confirmation text is shown after the form is successfully submitted:
+![RequestForm - Submitted](docs/RequestForm_Submitted.png)
+
 ## Presentation Steps
 
 1. Create a `RequestForm.test.js` file
