@@ -15,5 +15,6 @@ export const RequestForm = () => (
       <label htmlFor="email">Email</label>
       <input type="email" id="email" data-testid="email" />
     </div>
+    <button type="submit">Request Demo</button>
   </form>
 )
