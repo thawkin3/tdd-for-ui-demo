@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tdd-for-ui-demo/build/static/css/main.95d01994.chunk.css",
-    "main.js": "/tdd-for-ui-demo/build/static/js/main.278dd1a1.chunk.js",
-    "main.js.map": "/tdd-for-ui-demo/build/static/js/main.278dd1a1.chunk.js.map",
-    "runtime-main.js": "/tdd-for-ui-demo/build/static/js/runtime-main.bda422dc.js",
-    "runtime-main.js.map": "/tdd-for-ui-demo/build/static/js/runtime-main.bda422dc.js.map",
-    "static/js/2.4dd06801.chunk.js": "/tdd-for-ui-demo/build/static/js/2.4dd06801.chunk.js",
-    "static/js/2.4dd06801.chunk.js.map": "/tdd-for-ui-demo/build/static/js/2.4dd06801.chunk.js.map",
-    "static/js/3.8668c9a3.chunk.js": "/tdd-for-ui-demo/build/static/js/3.8668c9a3.chunk.js",
-    "static/js/3.8668c9a3.chunk.js.map": "/tdd-for-ui-demo/build/static/js/3.8668c9a3.chunk.js.map",
+    "main.css": "/tdd-for-ui-demo/build/static/css/main.148f5322.chunk.css",
+    "main.js": "/tdd-for-ui-demo/build/static/js/main.7aee0ef5.chunk.js",
+    "main.js.map": "/tdd-for-ui-demo/build/static/js/main.7aee0ef5.chunk.js.map",
+    "runtime-main.js": "/tdd-for-ui-demo/build/static/js/runtime-main.2e0b82a7.js",
+    "runtime-main.js.map": "/tdd-for-ui-demo/build/static/js/runtime-main.2e0b82a7.js.map",
+    "static/js/2.4b345916.chunk.js": "/tdd-for-ui-demo/build/static/js/2.4b345916.chunk.js",
+    "static/js/2.4b345916.chunk.js.map": "/tdd-for-ui-demo/build/static/js/2.4b345916.chunk.js.map",
+    "static/js/3.c1f7eeed.chunk.js": "/tdd-for-ui-demo/build/static/js/3.c1f7eeed.chunk.js",
+    "static/js/3.c1f7eeed.chunk.js.map": "/tdd-for-ui-demo/build/static/js/3.c1f7eeed.chunk.js.map",
     "index.html": "/tdd-for-ui-demo/build/index.html",
-    "static/css/main.95d01994.chunk.css.map": "/tdd-for-ui-demo/build/static/css/main.95d01994.chunk.css.map",
-    "static/js/2.4dd06801.chunk.js.LICENSE.txt": "/tdd-for-ui-demo/build/static/js/2.4dd06801.chunk.js.LICENSE.txt"
+    "static/css/main.148f5322.chunk.css.map": "/tdd-for-ui-demo/build/static/css/main.148f5322.chunk.css.map",
+    "static/js/2.4b345916.chunk.js.LICENSE.txt": "/tdd-for-ui-demo/build/static/js/2.4b345916.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bda422dc.js",
-    "static/js/2.4dd06801.chunk.js",
-    "static/css/main.95d01994.chunk.css",
-    "static/js/main.278dd1a1.chunk.js"
+    "static/js/runtime-main.2e0b82a7.js",
+    "static/js/2.4b345916.chunk.js",
+    "static/css/main.148f5322.chunk.css",
+    "static/js/main.7aee0ef5.chunk.js"
   ]
 }
