@@ -10,12 +10,12 @@ describe('RequestForm', () => {
   it('renders a first name text input', () => {
     render(<RequestForm />)
     expect(screen.getByLabelText('First Name')).toBeInTheDocument()
-    expect(screen.getByRole('textbox')).toBeInTheDocument()
+    expect(screen.getByTestId('firstName')).toBeInTheDocument()
   })
 
   it('renders a last name text input', () => {
     render(<RequestForm />)
     expect(screen.getByLabelText('Last Name')).toBeInTheDocument()
-    expect(screen.getByRole('textbox')).toBeInTheDocument()
+    expect(screen.getByTestId('lastName')).toBeInTheDocument()
   })
 })
