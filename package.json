@@ -9,7 +9,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx,md}\"",
     "format:watch": "onchange \"src/**/*.{js,jsx,md}\" -- prettier --write {{changed}}",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --watchAll=false --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -27,6 +28,13 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.js",
+      "!src/reportWebVitals.js"
     ]
   },
   "dependencies": {
