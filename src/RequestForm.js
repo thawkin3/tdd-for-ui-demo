@@ -38,7 +38,7 @@ export const RequestForm = () => {
 
   return (
     <form className="requestForm" onSubmit={handleSubmit}>
-      <div className="formGroup">
+      <div className={`formGroup${firstNameError ? ' error' : ''}`}>
         <label htmlFor="firstName">First Name</label>
         <input
           name="firstName"
@@ -48,8 +48,8 @@ export const RequestForm = () => {
           onChange={handleChange}
         />
       </div>
-      {firstNameError && <p>{firstNameError}</p>}
-      <div className="formGroup">
+      {firstNameError && <p className="errorMessage">{firstNameError}</p>}
+      <div className={`formGroup${lastNameError ? ' error' : ''}`}>
         <label htmlFor="lastName">Last Name</label>
         <input
           name="lastName"
@@ -59,8 +59,8 @@ export const RequestForm = () => {
           onChange={handleChange}
         />
       </div>
-      {lastNameError && <p>{lastNameError}</p>}
-      <div className="formGroup">
+      {lastNameError && <p className="errorMessage">{lastNameError}</p>}
+      <div className={`formGroup${emailError ? ' error' : ''}`}>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -71,7 +71,7 @@ export const RequestForm = () => {
           onChange={handleChange}
         />
       </div>
-      {emailError && <p>{emailError}</p>}
+      {emailError && <p className="errorMessage">{emailError}</p>}
       <button type="submit">Request Demo</button>
     </form>
   )

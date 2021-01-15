@@ -44,3 +44,4 @@ The basic requirements are:
 14. Refactor your code to center the form on the page and place it in a bordered box (note that the tests continue to pass during our refactor!)
 15. Write a test that verifies error messages are shown if the user attempts to submit a blank form
 16. Change the `RequestForm` to use controlled components and state. Write `onChange` and `onSubmit` methods to handle updating the form values and showing error messages when any of the form fields are empty and the form is submitted (passes)
+17. Refactor the code to show the error messages in red and keep the form a consistent height (note that the tests continue to pass during our refactor!)
