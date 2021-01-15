@@ -6,4 +6,10 @@ describe('RequestForm', () => {
   it('renders without crashing', () => {
     expect(() => render(<RequestForm />)).not.toThrow()
   })
+
+  it('renders a first name text input', () => {
+    render(<RequestForm />)
+    expect(screen.getByLabelText('First Name')).toBeInTheDocument()
+    expect(screen.getByRole('textbox')).toBeInTheDocument()
+  })
 })
