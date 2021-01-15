@@ -24,4 +24,9 @@ describe('RequestForm', () => {
     expect(screen.getByLabelText('Email')).toBeInTheDocument()
     expect(screen.getByTestId('email')).toBeInTheDocument()
   })
+
+  it('renders a submit button', () => {
+    render(<RequestForm />)
+    expect(screen.getByText('Request Demo')).toBeInTheDocument()
+  })
 })
