@@ -18,4 +18,10 @@ describe('RequestForm', () => {
     expect(screen.getByLabelText('Last Name')).toBeInTheDocument()
     expect(screen.getByTestId('lastName')).toBeInTheDocument()
   })
+
+  it('renders an email address text input', () => {
+    render(<RequestForm />)
+    expect(screen.getByLabelText('Email')).toBeInTheDocument()
+    expect(screen.getByTestId('email')).toBeInTheDocument()
+  })
 })
