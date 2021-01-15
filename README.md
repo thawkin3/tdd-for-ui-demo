@@ -29,4 +29,9 @@ The basic requirements are:
 ## Presentation Steps
 
 1. Create a `RequestForm.test.js` file
-2. Write a test that renders the form
+2. Write a test that renders the form (fails)
+3. Create a `RequestForm.js` file and have the component render an empty `form` element (passes)
+4. Write a test that looks for a first name input (fails)
+5. Render a first name input and label (passes)
+6. Write a test that looks for a last name input (fails)
+7. Render a last name input and label (passes)
