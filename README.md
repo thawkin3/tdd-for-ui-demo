@@ -38,3 +38,4 @@ The basic requirements are:
 8. Refactor your code to render the form inputs in a column (note that the tests continue to pass during our refactor!)
 9. Write a test that looks for the email address input (fails)
 10. Render an email input and label (passes)
+11. Refactor your code to line up the form inputs in nice columns (note that the tests continue to pass during our refactor!)
