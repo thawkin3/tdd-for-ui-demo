@@ -25,3 +25,8 @@ The basic requirements are:
 2. The form displays a submit button
 3. If any of the form inputs are left blank or filled out incorrectly, an error message should display
 4. When the form is successfully submitted, the form should disappear and be replaced with a confirmation message
+
+## Presentation Steps
+
+1. Create a `RequestForm.test.js` file
+2. Write a test that renders the form
