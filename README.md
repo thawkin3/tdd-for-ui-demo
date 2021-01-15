@@ -42,3 +42,4 @@ The basic requirements are:
 12. Write a test that looks for a submit button (fails)
 13. Render a submit button (passes)
 14. Refactor your code to center the form on the page and place it in a bordered box (note that the tests continue to pass during our refactor!)
+15. Write a test that verifies error messages are shown if the user attempts to submit a blank form

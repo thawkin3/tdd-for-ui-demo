@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { RequestForm } from './RequestForm'
 
 describe('RequestForm', () => {
@@ -28,5 +28,13 @@ describe('RequestForm', () => {
   it('renders a submit button', () => {
     render(<RequestForm />)
     expect(screen.getByText('Request Demo')).toBeInTheDocument()
+  })
+
+  it('renders an error message for each of the inputs if none of them are filled out and the user submits the form', () => {
+    render(<RequestForm />)
+    fireEvent.click(screen.getByText('Request Demo'))
+    expect(screen.getByText('First Name field is required')).toBeInTheDocument()
+    expect(screen.getByText('Last Name field is required')).toBeInTheDocument()
+    expect(screen.getByText('Email field is required')).toBeInTheDocument()
   })
 })
