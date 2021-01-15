@@ -2,7 +2,7 @@ import React from 'react'
 import './RequestForm.css'
 
 export const RequestForm = () => (
-  <form>
+  <form className="requestForm">
     <div className="formGroup">
       <label htmlFor="firstName">First Name</label>
       <input id="firstName" data-testid="firstName" />

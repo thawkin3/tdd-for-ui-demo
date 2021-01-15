@@ -7,3 +7,11 @@
   display: inline-block;
   width: 6rem;
 }
+
+.requestForm {
+  border: solid 0.0125rem #000;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: inline-block;
+  text-align: left;
+}
