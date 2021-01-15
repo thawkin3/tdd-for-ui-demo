@@ -45,4 +45,5 @@ The basic requirements are:
 15. Write a test that verifies error messages are shown if the user attempts to submit a blank form
 16. Change the `RequestForm` to use controlled components and state. Write `onChange` and `onSubmit` methods to handle updating the form values and showing error messages when any of the form fields are empty and the form is submitted (passes)
 17. Refactor the code to show the error messages in red and keep the form a consistent height (note that the tests continue to pass during our refactor!)
-18. Write a test that verifies the form can be successfully submitted
+18. Write a test that verifies the form can be successfully submitted (fails)
+19. Update the code to render the confirmation text when the form is submitted (passes)

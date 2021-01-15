@@ -6,27 +6,23 @@ export const RequestForm = () => {
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
 
-  const handleChange = e => {
-    const { name, value } = e.target
+  const handleFirstNameChange = e => {
+    setFirstName(e.target.value)
+  }
 
-    switch (name) {
-      case 'firstName':
-        setFirstName(value)
-        break
-      case 'lastName':
-        setLastName(value)
-        break
-      case 'email':
-        setEmail(value)
-        break
-      default:
-        return
-    }
+  const handleLastNameChange = e => {
+    setLastName(e.target.value)
+  }
+
+  const handleEmailChange = e => {
+    setEmail(e.target.value)
   }
 
   const [firstNameError, setFirstNameError] = useState('')
   const [lastNameError, setLastNameError] = useState('')
   const [emailError, setEmailError] = useState('')
+
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -34,9 +30,15 @@ export const RequestForm = () => {
     setFirstNameError(firstName ? '' : 'First Name field is required')
     setLastNameError(lastName ? '' : 'Last Name field is required')
     setEmailError(email ? '' : 'Email field is required')
+
+    if (firstName && lastName && email) {
+      setSubmitted(true)
+    }
   }
 
-  return (
+  return submitted ? (
+    <p>Thank you! We will be in touch with you shortly.</p>
+  ) : (
     <form className="requestForm" onSubmit={handleSubmit}>
       <div className={`formGroup${firstNameError ? ' error' : ''}`}>
         <label htmlFor="firstName">First Name</label>
@@ -45,7 +47,7 @@ export const RequestForm = () => {
           id="firstName"
           data-testid="firstName"
           value={firstName}
-          onChange={handleChange}
+          onChange={handleFirstNameChange}
         />
       </div>
       {firstNameError && <p className="errorMessage">{firstNameError}</p>}
@@ -56,7 +58,7 @@ export const RequestForm = () => {
           id="lastName"
           data-testid="lastName"
           value={lastName}
-          onChange={handleChange}
+          onChange={handleLastNameChange}
         />
       </div>
       {lastNameError && <p className="errorMessage">{lastNameError}</p>}
@@ -68,7 +70,7 @@ export const RequestForm = () => {
           id="email"
           data-testid="email"
           value={email}
-          onChange={handleChange}
+          onChange={handleEmailChange}
         />
       </div>
       {emailError && <p className="errorMessage">{emailError}</p>}
