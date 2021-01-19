@@ -59,3 +59,7 @@ Confirmation text is shown after the form is successfully submitted:
 17. Refactor the code to show the error messages in red and keep the form a consistent height (note that the tests continue to pass during our refactor!)
 18. Write a test that verifies the form can be successfully submitted (fails)
 19. Update the code to render the confirmation text when the form is submitted (passes)
+
+## Final Code Coverage Result
+
+![100% code coverage](CodeCoverage.png)
